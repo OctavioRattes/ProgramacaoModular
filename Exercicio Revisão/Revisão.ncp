@@ -1,0 +1,48 @@
+<Project>
+  <Name>Revisão</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>AppCompra</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Compras</Name>
+        <Access>Public</Access>
+        <Location left="941" top="137" />
+        <Size width="224" height="288" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static STRING[] PRODUTO</Member>
+        <Member type="Field">private double valorTotal</Member>
+        <Member type="Field">private static int MAX_ITENS = 100</Member>
+        <Member type="Method">public void finalizarCompra()</Member>
+        <Member type="Method">public void adicionarProduto()</Member>
+        <Member type="Method">public void limitarProdutos()</Member>
+        <Member type="Method">public void registrarPreço()</Member>
+        <Member type="Method">private boolean verificarTeto()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Produto</Name>
+        <Access>Public</Access>
+        <Location left="654" top="193" />
+        <Size width="198" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private double valorAtual</Member>
+        <Member type="Field">private double valorMaximo</Member>
+        <Member type="Field">private double valorUltimacompra</Member>
+        <Member type="Field">private static String nome</Member>
+        <Member type="Method">public double registrarValorAtual()</Member>
+        <Member type="Method">public double consultarValorAnterior()</Member>
+        <Member type="Method">public double registrarValorMaximo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
