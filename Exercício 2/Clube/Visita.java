@@ -10,11 +10,12 @@ public class Visita {
 	private Frequentador frequentador;
 	private Data data;
 	private Hora horaEntrada;
-	private hora horaSaida;
+	private Hora horaSaida;
 
 	public Visita(Frequentador frequentador, Data data, Hora horaEntrada){
 		this.frequentador = frequentador;
-		this.data
+		this.data = data;
+		this.horaEntrada = horaEntrada;
 	}
 
 	public void registrarVisita(Data dia) {

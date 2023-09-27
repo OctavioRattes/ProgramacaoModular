@@ -27,14 +27,14 @@ public class Clube{
     
     public void registrarVisita(String idFreq){
         for (int i = 0; i < quantFreq; i++) {
-            if(idFreq.equals(frequentadores[i].getID()))
+            if(idFreq.equals(frequentadores[i].getId()))
                 frequentadores[i].registrarVisita();
         }
     }
 
     public void registrarSaida(String idFreq){
         for (int i = 0; i < quantFreq; i++) {
-            if(idFreq.equals(frequentadores[i].getID()))
+            if(idFreq.equals(frequentadores[i].getId()))
                 frequentadores[i].registrarSaida();
         }
     }
@@ -50,7 +50,7 @@ public class Clube{
 
     public String relatorioVisitasFreq(String idFreq){
         for (int i = 0; i < quantFreq; i++) {
-            if(idFreq.equals(frequentadores[i].getID()))
+            if(idFreq.equals(frequentadores[i].getId()))
                 return frequentadores[i].relatorioVisitas();
         }
         return "Não existe este sócio";
