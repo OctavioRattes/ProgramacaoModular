@@ -1,2 +1,2 @@
 # ProgramacaoModular
-TRabalhos desenvolvidos da matéria Programação Modular
+Trabalhos desenvolvidos da matéria Programação Modular com a linguagem Java.
