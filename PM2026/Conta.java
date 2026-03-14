@@ -4,18 +4,33 @@ public class Conta {
 	private String conta;
 	private double saldo;
 	private double limite;
-	private double taxa;
+	private double taxa = 0.03;
 
-	public double saque() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
+	public Conta (String cpf, String conta, double saldo, double limite){
+		this.cpf = cpf;
+		this.conta = conta;
+		this.saldo = saldo;
+		this.limite = limite;
 	}
 
-	public double deposito() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
+	public double saque(double valorSaque) {
+		if (saldo + limite >= valorSaque) {
+			saldo -= valorSaque;
+		} else {
+			System.out.println("Saldo insuficiente para realizar o saque.");
+		}
+		return saldo;
 	}
 
-	public void calcularTaxa() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
+	public double deposito(double valorDeposito) {
+		if (saldo < 0) {
+			return saldo += valorDeposito - calcularTaxa(valorDeposito);
+		}
+		return saldo + valorDeposito;
+	}
+
+	public double calcularTaxa(double valorDeposito) {
+		return valorDeposito * taxa;
 	}
 
 }
