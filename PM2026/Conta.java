@@ -4,14 +4,18 @@ public class Conta {
 	private String conta;
 	private double saldo;
 	private double limite;
-	private double taxa = 0.03;
+	private double taxa;
 
 	public Conta (String cpf, String conta, double saldo, double limite){
 		this.cpf = cpf;
 		this.conta = conta;
 		this.saldo = saldo;
 		this.limite = limite;
+		this.taxa = 0.03;
 	}
+
+    public Conta() {
+    }
 
 	public double saque(double valorSaque) {
 		if (saldo + limite >= valorSaque) {
@@ -29,8 +33,8 @@ public class Conta {
 		return saldo + valorDeposito;
 	}
 
-	public double calcularTaxa(double valorDeposito) {
+	private double calcularTaxa(double valorDeposito) {
 		return valorDeposito * taxa;
 	}
-
+}
 }
