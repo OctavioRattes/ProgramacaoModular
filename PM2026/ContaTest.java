@@ -1,10 +1,7 @@
-<<<<<<< HEAD
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-=======
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
->>>>>>> c86b1045537bd3a6e60407ad6807a8bb99ee07bb
+
 
 public class ContaTest {
 
