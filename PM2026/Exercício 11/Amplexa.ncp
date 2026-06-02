@@ -1,0 +1,159 @@
+<Project>
+  <Name>Amplexa</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Amplexa</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Amplexa</Name>
+        <Access>Public</Access>
+        <Location left="429" top="79" />
+        <Size width="233" height="157" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private List&lt;Dispositivo&gt; dispositivos</Member>
+        <Member type="Method">public int addDispositivos(Dispositivo novo)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Dispositivo</Name>
+        <Access>Public</Access>
+        <Location left="447" top="281" />
+        <Size width="195" height="137" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected String nome</Member>
+        <Member type="Method">public void Dispositivo(String nome)</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>VolumeAjustavel</Name>
+        <Access>Public</Access>
+        <Location left="523" top="717" />
+        <Size width="203" height="101" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void ajustarVolume(int volume)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>Lampada</Name>
+        <Access>Public</Access>
+        <Location left="267" top="475" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private boolean ligada</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CaixaDeSom</Name>
+        <Access>Public</Access>
+        <Location left="509" top="475" />
+        <Size width="162" height="126" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private boolean ligada</Member>
+        <Member type="Field">private int volume</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Geladeira</Name>
+        <Access>Public</Access>
+        <Location left="752" top="475" />
+        <Size width="162" height="96" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int potencia</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>PotenciaAjustavel</Name>
+        <Access>Public</Access>
+        <Location left="785" top="629" />
+        <Size width="212" height="100" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void ajustarPotencia(int potencia)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Ligavel</Name>
+        <Access>Public</Access>
+        <Location left="223" top="667" />
+        <Size width="162" height="118" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void ligar()</Member>
+        <Member type="Method">void desligar()</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>554</X>
+          <Y>267</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>534</X>
+          <Y>256</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>484</X>
+          <Y>443</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>786</X>
+          <Y>450</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>615</X>
+          <Y>443</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="4" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>647</X>
+          <Y>633</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>876</X>
+          <Y>599</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="4" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>538</X>
+          <Y>631</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>412</X>
+          <Y>679</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="3" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>287</X>
+          <Y>641</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
