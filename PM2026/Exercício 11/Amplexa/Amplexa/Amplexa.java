@@ -8,8 +8,13 @@ public class Amplexa {
 	private String nome;
 	private List<Dispositivo> dispositivos;
 
-	public int addDispositivos(Dispositivo novo) {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
+	public Amplexa(String nome) {
+		this.nome = nome;
+		this.dispositivos = new ArrayList<>();
+	}
+
+	public void addDispositivos(Dispositivo novo) {
+		dispositivos.add(novo);
 	}
 
 }
