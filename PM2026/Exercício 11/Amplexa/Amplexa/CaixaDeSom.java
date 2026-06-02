@@ -14,24 +14,27 @@ public class CaixaDeSom extends Dispositivo implements VolumeAjustavel, Ligavel 
 		this.volume = 0;
 	}
 
-	public void ligar() {
+	public boolean ligar() {
 		this.ligada = true;
+		return true;
 	}
 
-	public void desligar() {
+	public boolean desligar() {
 		this.ligada = false;
+		return false;
 	}
 
-	public void aumentarVolume(int volume) {
+	public int aumentarVolume(int volume) {
 		if (ligada && this.volume < 100) {
 			this.volume++;
 		}
+		return this.volume;
 	}
 
-	public void diminuirVolume(int volume) {
+	public int diminuirVolume(int volume) {
 		if (ligada && this.volume > 0) {
 			this.volume--;
 		}
-	}
-
+		return this.volume;
+		}
 }

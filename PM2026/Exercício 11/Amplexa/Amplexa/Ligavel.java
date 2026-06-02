@@ -5,8 +5,8 @@ import java.io.*;
 
 public interface Ligavel {
 
-	void ligar();
+	boolean ligar();
 
-	void desligar();
+	boolean desligar();
 
 }

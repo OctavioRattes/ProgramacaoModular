@@ -12,12 +12,14 @@ public class Lampada extends Dispositivo implements Ligavel {
 		this.ligada = false;
 	}
 
-	public void ligar() {
+	public boolean ligar() {
 		this.ligada = true;
+		return true;
 	}
 
-	public void desligar() {
+	public boolean desligar() {
 		this.ligada = false;
+		return false;
 	}
 
 }

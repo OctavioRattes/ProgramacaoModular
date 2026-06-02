@@ -5,8 +5,8 @@ import java.io.*;
 
 public interface VolumeAjustavel {
 
-	void aumentarVolume(int volume);
+	int aumentarVolume(int volume);
 
-	void diminuirVolume(int volume);
+	int diminuirVolume(int volume);
 
 }

@@ -5,8 +5,8 @@ import java.io.*;
 
 public interface PotenciaAjustavel {
 
-	void aumentarPotencia(int potencia);
+	int aumentarPotencia(int potencia);
 
-	void diminuirPotencia(int potencia);
+	int diminuirPotencia(int potencia);
 
 }

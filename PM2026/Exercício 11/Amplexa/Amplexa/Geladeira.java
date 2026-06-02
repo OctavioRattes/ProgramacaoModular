@@ -12,16 +12,18 @@ public class Geladeira extends Dispositivo implements PotenciaAjustavel {
 		this.potencia = 0;
 	}
 
-	public void aumentarPotencia(int potencia) {
+	public int aumentarPotencia(int potencia) {
 		if (this.potencia < 10) {
 			this.potencia++;
 		}
+		return this.potencia;
 	}
 
-	public void diminuirPotencia(int potencia) {
+	public int diminuirPotencia(int potencia) {
 		if (this.potencia > 1) {
 			this.potencia--;
 		}
+		return this.potencia;	
 	}
 
 }
